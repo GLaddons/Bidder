@@ -1111,9 +1111,13 @@ local function IsInDistribution(dist, customChannel)
 	elseif dist == "BATTLEGROUND" then
 		return select(2, IsInInstance()) == "pvp" or select(2, IsInInstance()) == "arena"
 	elseif dist == "RAID" then
-		return GetNumRaidMembers() > 0
+		if (IsInRaid() == true) then
+			return GetNumGroupMembers() > 0
+		else
+			return false;
+		end
 	elseif dist == "PARTY" then
-		return GetNumPartyMembers() > 0
+		return GetNumGroupMembers() > 0
 	elseif dist == "GUILD" then
 		return not not IsInGuild()
 	elseif dist == "GLOBAL" then

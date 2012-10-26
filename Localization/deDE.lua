@@ -86,6 +86,7 @@ local translations = {
    ["Select the classes to display in the DKP standings"] = "W\195\164hle die Klassen deren DKP angezeigt werden sollen",
    ["Druid"] = "Druide", ["Show druids"] = "Zeige Druiden",
    ["Hunter"] = "J\195\164ger", ["Show hunters"] = "Zeige J\195\164ger",
+   ["Monk"] = "Monk", ["Show monks"] = "Monks",
    ["Mage"] = "Magier", ["Show mages"] = "Zeige Magier",
    ["Paladin"] = "Paladin", ["Show paladins"] = "Zeige Paladine",
    ["Priest"] = "Priester", ["Show priests"] = "Zeige Priester",

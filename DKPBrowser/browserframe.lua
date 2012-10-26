@@ -146,6 +146,17 @@ local dewOptions = {
 		     end,
 	       order = 3
 	    },
+      mage = {
+         type = 'toggle', name = L["Monk"], desc = L["Show monks"],
+         get = function() return not Bidder.db.realm.DKPBrowser.filters["MONK"] end,
+         set = function(v) 
+      Bidder.db.realm.DKPBrowser.filters["MONK"] = not v
+      BrowserFrame:CopyDKPInfo()
+      BrowserFrame:ResortDKP()
+      BrowserFrame:Show()
+         end,
+         order = 4
+      },
 	    paladin = {
 	       type = 'toggle', name = L["Paladin"], desc = L["Show paladins"],
 	       get = function() return not Bidder.db.realm.DKPBrowser.filters["PALADIN"] end,
@@ -155,7 +166,7 @@ local dewOptions = {
 			BrowserFrame:ResortDKP()
 			BrowserFrame:Show()
 		     end,
-	       order = 4
+	       order = 5
 	    },
 	    priest = {
 	       type = 'toggle', name = L["Priest"], desc = L["Show priests"],
@@ -166,7 +177,7 @@ local dewOptions = {
 			BrowserFrame:ResortDKP()
 			BrowserFrame:Show()
 		     end,
-	       order = 5
+	       order = 6
 	    },
 	    rogue = {
 	       type = 'toggle', name = L["Rogue"], desc = L["Show rogues"],
@@ -177,7 +188,7 @@ local dewOptions = {
 			BrowserFrame:ResortDKP()
 			BrowserFrame:Show()
 		     end,
-	       order = 6
+	       order = 7
 	    },
 	    shaman = {
 	       type = 'toggle', name = L["Shaman"], desc = L["Show shaman"],
@@ -188,7 +199,7 @@ local dewOptions = {
 			BrowserFrame:ResortDKP()
 			BrowserFrame:Show()
 		     end,
-	       order = 7
+	       order = 8
 	    },
 	    warlock = {
 	       type = 'toggle', name = L["Warlock"], desc = L["Show warlocks"],
@@ -199,7 +210,7 @@ local dewOptions = {
 			BrowserFrame:ResortDKP()
 			BrowserFrame:Show()
 		     end,
-	       order = 8
+	       order = 9
 	    },
 	    warrior = {
 	       type = 'toggle', name = L["Warrior"], desc = L["Show warriors"],
@@ -210,7 +221,7 @@ local dewOptions = {
 			BrowserFrame:ResortDKP()
 			BrowserFrame:Show()
 		     end,
-	       order = 9
+	       order = 10
 	    }
 	 }
       }

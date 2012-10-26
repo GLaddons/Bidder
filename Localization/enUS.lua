@@ -86,6 +86,7 @@ local translations = {
    ["Select the classes to display in the DKP standings"] = true,
    ["Druid"] = true, ["Show druids"] = true,
    ["Hunter"] = true, ["Show hunters"] = true,
+   ["Monk"] = true, ["Show monks"] = true,
    ["Mage"] = true, ["Show mages"] = true,
    ["Paladin"] = true, ["Show paladins"] = true,
    ["Priest"] = true, ["Show priests"] = true,

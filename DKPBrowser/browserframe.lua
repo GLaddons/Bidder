@@ -146,7 +146,7 @@ local dewOptions = {
 		     end,
 	       order = 3
 	    },
-      mage = {
+      monk = {
          type = 'toggle', name = L["Monk"], desc = L["Show monks"],
          get = function() return not Bidder.db.realm.DKPBrowser.filters["MONK"] end,
          set = function(v) 

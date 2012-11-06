@@ -1,7 +1,7 @@
 ## Interface: 50001
 ## Title: Bidder
 ## Author: Eraslin - now maintained by Guild Launch
-## Version: 4.2.1
+## Version: 4.2.2
 ## Notes: Addon for placing bids with DKPmon
 ## Notes-deDE: Addon zum abgeben von Geboten mit DKPmon
 ## X-eMail: support@guildlaunch.com
